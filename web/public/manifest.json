@@ -1,6 +1,6 @@
 {
-  "short_name": "Astria Rollups",
-  "name": "Astria Rollup Deployer",
+  "short_name": "Astria <project-name>",
+  "name": "Astria <project-name>",
   "icons": [
     {
       "src": "favicon.ico",

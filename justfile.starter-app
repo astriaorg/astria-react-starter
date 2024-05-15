@@ -1,0 +1,13 @@
+# commands for creating a new project from this starter app
+
+# create a new project
+create-project newname:
+  cp -r . ../astria-{{newname}}
+  cd ../astria-{{newname}} && just rename-project {{newname}}
+
+# use after creating new project
+rename-project newname:
+  sed -i '' 's/<project-name>/{{newname}}/g' ./web/package.json
+  sed -i '' 's/<project-name>/{{newname}}/g' ./web/package-lock.json
+  sed -i '' 's/<project-name>/{{newname}}/g' ./web/public/index.html
+  sed -i '' 's/<project-name>/{{newname}}/g' ./web/public/manifest.json

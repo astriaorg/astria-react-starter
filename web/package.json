@@ -1,5 +1,5 @@
 {
-  "name": "astria-react-starter",
+  "name": "astria-<project-name>",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
