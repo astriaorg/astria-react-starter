@@ -15,7 +15,6 @@ function Navbar() {
   return (
     <nav
       className="navbar is-spaced is-transparent"
-      role="navigation"
       aria-label="main navigation"
     >
       <div className="navbar-brand">
@@ -30,9 +29,9 @@ function Navbar() {
           data-target="topNavbar"
           onClick={onHamburgerClick}
         >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
         </button>
       </div>
 
@@ -40,7 +39,7 @@ function Navbar() {
         id="topNavbar"
         className={`navbar-menu ${isMobileMenuActive && "is-active"}`}
       >
-        <div className="navbar-start"></div>
+        <div className="navbar-start" />
       </div>
     </nav>
   );

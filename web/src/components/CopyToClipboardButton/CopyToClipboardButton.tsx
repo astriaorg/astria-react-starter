@@ -32,7 +32,7 @@ export default function CopyToClipboardButton({
         {copyStatus && <div className="fade-out">{copyStatus}</div>}
         {!copyStatus && (
           <span className={`icon ${fadeInClass}`}>
-            <i className="fas fa-clipboard"></i>
+            <i className="fas fa-clipboard" />
           </span>
         )}
       </button>

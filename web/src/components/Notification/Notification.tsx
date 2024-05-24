@@ -45,7 +45,7 @@ function Notification({
   // modals can be used for confirmation dialogs
   const ModalElem = () => (
     <div className="modal is-active">
-      <div className="modal-background"></div>
+      <div className="modal-background" />
       <div className="modal-card has-background-danger">
         <header className={`modal-card-head ${modalBackgroundClass()}`}>
           <p className="modal-card-title has-text-white-ter">
@@ -111,7 +111,7 @@ function Notification({
           className="delete"
           aria-label="acknowledge"
           onClick={onToastAcknowledge}
-        ></button>
+        />
       </div>
       <div className="message-body">
         {toastOpts?.message}
