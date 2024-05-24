@@ -52,10 +52,11 @@ function Notification({
             {modalOpts?.title}
           </p>
           <button
+            type="button"
             className="delete"
             aria-label="close"
             onClick={() => onRemove(id)}
-          ></button>
+            />
         </header>
         <section className="modal-card-body has-text-dark">
           {modalOpts?.message}
@@ -63,12 +64,13 @@ function Notification({
         </section>
         <footer className="modal-card-foot">
           <button
+            type="button"
             className={`button ${modalButtonClass()}`}
             onClick={onModalConfirm}
           >
             Confirm
           </button>
-          <button className="button is-light" onClick={onModalCancel}>
+          <button type="button" className="button is-light" onClick={onModalCancel}>
             Cancel
           </button>
         </footer>
@@ -105,6 +107,7 @@ function Notification({
       <div className="message-header">
         <p>{getToastTitle()}</p>
         <button
+          type="button"
           className="delete"
           aria-label="acknowledge"
           onClick={onToastAcknowledge}

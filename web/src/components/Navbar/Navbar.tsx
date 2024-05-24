@@ -23,6 +23,7 @@ function Navbar() {
           <img src={logo} width="161" height="32" alt="logo" />
         </Link>
         <button
+          type="button"
           className={`navbar-burger ${isMobileMenuActive && "is-active"}`}
           aria-label="menu"
           aria-expanded="false"
