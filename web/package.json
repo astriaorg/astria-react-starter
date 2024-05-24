@@ -28,14 +28,11 @@
     "test-cov": "CI=true react-scripts test --coverage",
     "eject": "react-scripts eject",
     "format": "biome format --write .",
-    "lint": "biome lint ."
+    "lint": "biome lint ./src ./public",
+    "lint-apply": "biome lint --apply ./src ./public"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

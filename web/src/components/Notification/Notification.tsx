@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ModalOpts, ToastOpts, NotificationType, ToastPosition } from "./types";
+import { type ModalOpts, type ToastOpts, NotificationType, ToastPosition } from "./types";
 
 interface NotificationProps {
   id: string;
