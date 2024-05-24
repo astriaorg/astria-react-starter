@@ -1,3 +1,5 @@
+# Astria React Starter
+
 ```bash
 git clone git@github.com:astriaorg/astria-react-starter.git
 cd astria-react-starter

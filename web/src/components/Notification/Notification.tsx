@@ -119,7 +119,9 @@ function Notification({
 
   return (
     <div
-      className={`${isModal ? "" : "notifications-toast-container"} ${toastOpts?.position || ToastPosition.TOP_MID}`}
+      className={`${isModal ? "" : "notifications-toast-container"} ${
+        toastOpts?.position || ToastPosition.TOP_MID
+      }`}
     >
       {isModal ? <ModalElem /> : <ToastElem />}
     </div>
